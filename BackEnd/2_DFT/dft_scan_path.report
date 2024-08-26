@@ -1,0 +1,232 @@
+ 
+****************************************
+Report : Scan path
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:50:16 2025
+****************************************
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Specification
+========================================
+No scan path defined in this mode.
+
+ 
+****************************************
+Report : Scan path
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:50:16 2025
+****************************************
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path    Len   ScanDataIn  ScanDataOut ScanEnable  MasterClock SlaveClock
+-----------  ----- ----------- ----------- ----------- ----------- -----------
+I 1          11    Scan_In[0]  Scan_Out[0] Scan_En     clk         -
+I 2          15    Scan_In[1]  Scan_Out[1] Scan_En     clk         -
+I 3          15    Scan_In[2]  Scan_Out[2] Scan_En     clk         -
+I 4          15    Scan_In[3]  Scan_Out[3] Scan_En     clk         -
+I 5          15    Scan_In[4]  Scan_Out[4] Scan_En     clk         -
+I 6          15    Scan_In[5]  Scan_Out[5] Scan_En     clk         -
+I 7          11    Scan_In[6]  Scan_Out[6] Scan_En     clk         -
+I 8          14    Scan_In[7]  Scan_Out[7] Scan_En     clk         -
+I 9          14    Scan_In[8]  Scan_Out[8] Scan_En     clk         -
+I 10         14    Scan_In[9]  Scan_Out[9] Scan_En     clk         -
+I 11         14    Scan_In[10] Scan_Out[10] Scan_En    clk         -
+I 12         10    Scan_In[11] Scan_Out[11] Scan_En    clk         -
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path     Cell_#    Instance_name            Clocks
+---------     ------    -------------            ------
+I 1           0         risc_v/Program_counter/PC_Out_reg[0] clk 
+              1         risc_v/Program_counter/PC_Out_reg[1]
+              2         risc_v/Program_counter/PC_Out_reg[2]
+              3         risc_v/Program_counter/PC_Out_reg[3]
+              4         risc_v/Program_counter/PC_Out_reg[4]
+              5         risc_v/Program_counter/PC_Out_reg[5]
+              6         risc_v/Program_counter/PC_Out_reg[6]
+              7         risc_v/Program_counter/PC_Out_reg[7]
+              8         risc_v/Program_counter/PC_Out_reg[8]
+              9         risc_v/Program_counter/PC_Out_reg[9]
+              10        risc_v/Program_counter/PC_Out_reg[10]
+I 2           0         data_mem_sys/cache_contrl/old_op_reg clk 
+              1         data_mem_sys/cache_contrl/state_reg[0]
+              2         data_mem_sys/cache_contrl/state_reg[1]
+              3         data_mem_sys/cache_contrl/tags_arr_reg[0][0]
+              4         data_mem_sys/cache_contrl/tags_arr_reg[0][1]
+              5         data_mem_sys/cache_contrl/tags_arr_reg[0][2]
+              6         data_mem_sys/cache_contrl/tags_arr_reg[1][0]
+              7         data_mem_sys/cache_contrl/tags_arr_reg[1][1]
+              8         data_mem_sys/cache_contrl/tags_arr_reg[1][2]
+              9         data_mem_sys/cache_contrl/tags_arr_reg[2][0]
+              10        data_mem_sys/cache_contrl/tags_arr_reg[2][1]
+              11        data_mem_sys/cache_contrl/tags_arr_reg[2][2]
+              12        data_mem_sys/cache_contrl/tags_arr_reg[3][0]
+              13        data_mem_sys/cache_contrl/tags_arr_reg[3][1]
+              14        data_mem_sys/cache_contrl/tags_arr_reg[3][2]
+I 3           0         data_mem_sys/cache_contrl/tags_arr_reg[4][0] clk 
+              1         data_mem_sys/cache_contrl/tags_arr_reg[4][1]
+              2         data_mem_sys/cache_contrl/tags_arr_reg[4][2]
+              3         data_mem_sys/cache_contrl/tags_arr_reg[5][0]
+              4         data_mem_sys/cache_contrl/tags_arr_reg[5][1]
+              5         data_mem_sys/cache_contrl/tags_arr_reg[5][2]
+              6         data_mem_sys/cache_contrl/tags_arr_reg[6][0]
+              7         data_mem_sys/cache_contrl/tags_arr_reg[6][1]
+              8         data_mem_sys/cache_contrl/tags_arr_reg[6][2]
+              9         data_mem_sys/cache_contrl/tags_arr_reg[7][0]
+              10        data_mem_sys/cache_contrl/tags_arr_reg[7][1]
+              11        data_mem_sys/cache_contrl/tags_arr_reg[7][2]
+              12        data_mem_sys/cache_contrl/tags_arr_reg[8][0]
+              13        data_mem_sys/cache_contrl/tags_arr_reg[8][1]
+              14        data_mem_sys/cache_contrl/tags_arr_reg[8][2]
+I 4           0         data_mem_sys/cache_contrl/tags_arr_reg[9][0] clk 
+              1         data_mem_sys/cache_contrl/tags_arr_reg[9][1]
+              2         data_mem_sys/cache_contrl/tags_arr_reg[9][2]
+              3         data_mem_sys/cache_contrl/tags_arr_reg[10][0]
+              4         data_mem_sys/cache_contrl/tags_arr_reg[10][1]
+              5         data_mem_sys/cache_contrl/tags_arr_reg[10][2]
+              6         data_mem_sys/cache_contrl/tags_arr_reg[11][0]
+              7         data_mem_sys/cache_contrl/tags_arr_reg[11][1]
+              8         data_mem_sys/cache_contrl/tags_arr_reg[11][2]
+              9         data_mem_sys/cache_contrl/tags_arr_reg[12][0]
+              10        data_mem_sys/cache_contrl/tags_arr_reg[12][1]
+              11        data_mem_sys/cache_contrl/tags_arr_reg[12][2]
+              12        data_mem_sys/cache_contrl/tags_arr_reg[13][0]
+              13        data_mem_sys/cache_contrl/tags_arr_reg[13][1]
+              14        data_mem_sys/cache_contrl/tags_arr_reg[13][2]
+I 5           0         data_mem_sys/cache_contrl/tags_arr_reg[14][0] clk 
+              1         data_mem_sys/cache_contrl/tags_arr_reg[14][1]
+              2         data_mem_sys/cache_contrl/tags_arr_reg[14][2]
+              3         data_mem_sys/cache_contrl/tags_arr_reg[15][0]
+              4         data_mem_sys/cache_contrl/tags_arr_reg[15][1]
+              5         data_mem_sys/cache_contrl/tags_arr_reg[15][2]
+              6         data_mem_sys/cache_contrl/tags_arr_reg[16][0]
+              7         data_mem_sys/cache_contrl/tags_arr_reg[16][1]
+              8         data_mem_sys/cache_contrl/tags_arr_reg[16][2]
+              9         data_mem_sys/cache_contrl/tags_arr_reg[17][0]
+              10        data_mem_sys/cache_contrl/tags_arr_reg[17][1]
+              11        data_mem_sys/cache_contrl/tags_arr_reg[17][2]
+              12        data_mem_sys/cache_contrl/tags_arr_reg[18][0]
+              13        data_mem_sys/cache_contrl/tags_arr_reg[18][1]
+              14        data_mem_sys/cache_contrl/tags_arr_reg[18][2]
+I 6           0         data_mem_sys/cache_contrl/tags_arr_reg[19][0] clk 
+              1         data_mem_sys/cache_contrl/tags_arr_reg[19][1]
+              2         data_mem_sys/cache_contrl/tags_arr_reg[19][2]
+              3         data_mem_sys/cache_contrl/tags_arr_reg[20][0]
+              4         data_mem_sys/cache_contrl/tags_arr_reg[20][1]
+              5         data_mem_sys/cache_contrl/tags_arr_reg[20][2]
+              6         data_mem_sys/cache_contrl/tags_arr_reg[21][0]
+              7         data_mem_sys/cache_contrl/tags_arr_reg[21][1]
+              8         data_mem_sys/cache_contrl/tags_arr_reg[21][2]
+              9         data_mem_sys/cache_contrl/tags_arr_reg[22][0]
+              10        data_mem_sys/cache_contrl/tags_arr_reg[22][1]
+              11        data_mem_sys/cache_contrl/tags_arr_reg[22][2]
+              12        data_mem_sys/cache_contrl/tags_arr_reg[23][0]
+              13        data_mem_sys/cache_contrl/tags_arr_reg[23][1]
+              14        data_mem_sys/cache_contrl/tags_arr_reg[23][2]
+I 7           0         risc_v/Program_counter/PC_Out_reg[11] clk 
+              1         risc_v/Program_counter/PC_Out_reg[12]
+              2         risc_v/Program_counter/PC_Out_reg[13]
+              3         risc_v/Program_counter/PC_Out_reg[14]
+              4         risc_v/Program_counter/PC_Out_reg[15]
+              5         risc_v/Program_counter/PC_Out_reg[16]
+              6         risc_v/Program_counter/PC_Out_reg[17]
+              7         risc_v/Program_counter/PC_Out_reg[18]
+              8         risc_v/Program_counter/PC_Out_reg[19]
+              9         risc_v/Program_counter/PC_Out_reg[20]
+              10        risc_v/Program_counter/PC_Out_reg[21]
+I 8           0         data_mem_sys/cache_contrl/tags_arr_reg[24][0] clk 
+              1         data_mem_sys/cache_contrl/tags_arr_reg[24][1]
+              2         data_mem_sys/cache_contrl/tags_arr_reg[24][2]
+              3         data_mem_sys/cache_contrl/tags_arr_reg[25][0]
+              4         data_mem_sys/cache_contrl/tags_arr_reg[25][1]
+              5         data_mem_sys/cache_contrl/tags_arr_reg[25][2]
+              6         data_mem_sys/cache_contrl/tags_arr_reg[26][0]
+              7         data_mem_sys/cache_contrl/tags_arr_reg[26][1]
+              8         data_mem_sys/cache_contrl/tags_arr_reg[26][2]
+              9         data_mem_sys/cache_contrl/tags_arr_reg[27][0]
+              10        data_mem_sys/cache_contrl/tags_arr_reg[27][1]
+              11        data_mem_sys/cache_contrl/tags_arr_reg[27][2]
+              12        data_mem_sys/cache_contrl/tags_arr_reg[28][0]
+              13        data_mem_sys/cache_contrl/tags_arr_reg[28][1]
+I 9           0         data_mem_sys/cache_contrl/tags_arr_reg[28][2] clk 
+              1         data_mem_sys/cache_contrl/tags_arr_reg[29][0]
+              2         data_mem_sys/cache_contrl/tags_arr_reg[29][1]
+              3         data_mem_sys/cache_contrl/tags_arr_reg[29][2]
+              4         data_mem_sys/cache_contrl/tags_arr_reg[30][0]
+              5         data_mem_sys/cache_contrl/tags_arr_reg[30][1]
+              6         data_mem_sys/cache_contrl/tags_arr_reg[30][2]
+              7         data_mem_sys/cache_contrl/tags_arr_reg[31][0]
+              8         data_mem_sys/cache_contrl/tags_arr_reg[31][1]
+              9         data_mem_sys/cache_contrl/tags_arr_reg[31][2]
+              10        data_mem_sys/cache_contrl/valid_arr_reg[0]
+              11        data_mem_sys/cache_contrl/valid_arr_reg[1]
+              12        data_mem_sys/cache_contrl/valid_arr_reg[2]
+              13        data_mem_sys/cache_contrl/valid_arr_reg[3]
+I 10          0         data_mem_sys/cache_contrl/valid_arr_reg[4] clk 
+              1         data_mem_sys/cache_contrl/valid_arr_reg[5]
+              2         data_mem_sys/cache_contrl/valid_arr_reg[6]
+              3         data_mem_sys/cache_contrl/valid_arr_reg[7]
+              4         data_mem_sys/cache_contrl/valid_arr_reg[8]
+              5         data_mem_sys/cache_contrl/valid_arr_reg[9]
+              6         data_mem_sys/cache_contrl/valid_arr_reg[10]
+              7         data_mem_sys/cache_contrl/valid_arr_reg[11]
+              8         data_mem_sys/cache_contrl/valid_arr_reg[12]
+              9         data_mem_sys/cache_contrl/valid_arr_reg[13]
+              10        data_mem_sys/cache_contrl/valid_arr_reg[14]
+              11        data_mem_sys/cache_contrl/valid_arr_reg[15]
+              12        data_mem_sys/cache_contrl/valid_arr_reg[16]
+              13        data_mem_sys/cache_contrl/valid_arr_reg[17]
+I 11          0         data_mem_sys/cache_contrl/valid_arr_reg[18] clk 
+              1         data_mem_sys/cache_contrl/valid_arr_reg[19]
+              2         data_mem_sys/cache_contrl/valid_arr_reg[20]
+              3         data_mem_sys/cache_contrl/valid_arr_reg[21]
+              4         data_mem_sys/cache_contrl/valid_arr_reg[22]
+              5         data_mem_sys/cache_contrl/valid_arr_reg[23]
+              6         data_mem_sys/cache_contrl/valid_arr_reg[24]
+              7         data_mem_sys/cache_contrl/valid_arr_reg[25]
+              8         data_mem_sys/cache_contrl/valid_arr_reg[26]
+              9         data_mem_sys/cache_contrl/valid_arr_reg[27]
+              10        data_mem_sys/cache_contrl/valid_arr_reg[28]
+              11        data_mem_sys/cache_contrl/valid_arr_reg[29]
+              12        data_mem_sys/cache_contrl/valid_arr_reg[30]
+              13        data_mem_sys/cache_contrl/valid_arr_reg[31]
+I 12          0         risc_v/Program_counter/PC_Out_reg[22] clk 
+              1         risc_v/Program_counter/PC_Out_reg[23]
+              2         risc_v/Program_counter/PC_Out_reg[24]
+              3         risc_v/Program_counter/PC_Out_reg[25]
+              4         risc_v/Program_counter/PC_Out_reg[26]
+              5         risc_v/Program_counter/PC_Out_reg[27]
+              6         risc_v/Program_counter/PC_Out_reg[28]
+              7         risc_v/Program_counter/PC_Out_reg[29]
+              8         risc_v/Program_counter/PC_Out_reg[30]
+              9         risc_v/Program_counter/PC_Out_reg[31]
+
+1

@@ -1,0 +1,6 @@
+/home/ICer/ASIC/RISCV/pnr/Routing/RISCV_Top_Routing_Spef.spef.minTLU_125.spef for scenarios: 
+	 scenario: default, corner type: late
+
+/home/ICer/ASIC/RISCV/pnr/Routing/RISCV_Top_Routing_Spef.spef.maxTLU_125.spef for scenarios: 
+	 scenario: default, corner type: early
+

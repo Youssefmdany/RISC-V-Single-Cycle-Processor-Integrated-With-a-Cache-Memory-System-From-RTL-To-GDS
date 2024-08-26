@@ -1,0 +1,93 @@
+In mode: Internal_scan...
+  Design has scan chains in this mode
+  Design is scan routed
+  Post-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking clock rules...
+  ...checking scan chain rules...
+  ...checking scan compression rules...
+  ...checking X-state rules...
+  ...checking tristate rules...
+  ...extracting scan details...
+
+-----------------------------------------------------------------
+Begin Modeling violations...
+
+Warning: Cell risc_v/Instr_mem (instr_mem) is unknown (black box) because functionality for output pin inst[31] is bad or incomplete. (TEST-451)
+Information: There are 3 other cells with the same violation. (TEST-171)
+
+Modeling violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+Begin Clock violations...
+
+ Warning: Clock clk can capture new data on TE input CLK of DFF data_mem_sys/cache_contrl/valid_arr_reg[16]. (C6-1)
+         Source of violation: input CLK of DFF risc_v/Program_counter/PC_Out_reg[5].
+Information: There are 129 other cells with the same violation. (TEST-171)
+
+Clock violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 134
+
+-----------------------------------------------------------------
+
+4 MODELING VIOLATIONS
+     4 Cell has unknown model violations (TEST-451)
+
+130 CLOCK VIOLATIONS
+   130 Trailing edge port captured data affected by new capture violations (C6)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  130 out of 163 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITH VIOLATIONS
+      * 130 cells have capture violations
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      *  33 cells are valid scan cells
+
+Information: Test design rule checking completed. (TEST-123)
+  Running test coverage estimation...
+ 18504 faults were added to fault list.
+ 0            1450    674        0/28/0    16.14%      0.05
+ 0              14      0       0/449/0    16.22%      0.49
+ 
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ -----------------------------------------------
+ 
+
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       2840
+ Possibly detected                PT        300
+ Undetectable                     UD         68
+ ATPG untestable                  AU      15296
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                             18504
+ test coverage                            16.22%
+ -----------------------------------------------
+  Information: The test coverage above may be inferior
+               than the real test coverage with customized
+               protocol and test simulation library.
+1

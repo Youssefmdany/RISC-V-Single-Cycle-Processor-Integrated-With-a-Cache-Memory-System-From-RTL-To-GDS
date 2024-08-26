@@ -1,0 +1,381 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:52:54 2025
+****************************************
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[1] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[1] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[1]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[1]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U166/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[1]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[1]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[0] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[0] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[0]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[0]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U164/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[0]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[0]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[6] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[6] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[6]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[6]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U176/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[6]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[6]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[8] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[8] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[8]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[8]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U183/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[8]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[8]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[2] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[2] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[2]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[2]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U168/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[2]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[2]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[9] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[9] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[9]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[9]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U185/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[9]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[9]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[25] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[25] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[25]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[25]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U149/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[25]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[25]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[20] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[20] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[20]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[20]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U214/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[20]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[20]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[7] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[7] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[7]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[7]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U179/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[7]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[7]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: data_mem_sys/cache_contrl/valid_arr_reg[27] (falling edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/valid_arr_reg[27] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+
+  data_mem_sys/cache_contrl/valid_arr_reg[27]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  data_mem_sys/cache_contrl/valid_arr_reg[27]/QN (DFFNARX1_HVT)
+                                                   0.06     10.06 f
+  data_mem_sys/cache_contrl/U153/Y (NAND2X0_HVT)   0.02     10.08 r
+  data_mem_sys/cache_contrl/valid_arr_reg[27]/D (DFFNARX1_HVT)
+                                                   0.00     10.08 r
+  data arrival time                                         10.08
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/valid_arr_reg[27]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                                0.05     10.05
+  library hold time                               -0.00     10.05
+  data required time                                        10.05
+  ------------------------------------------------------------------------
+  data required time                                        10.05
+  data arrival time                                        -10.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+1

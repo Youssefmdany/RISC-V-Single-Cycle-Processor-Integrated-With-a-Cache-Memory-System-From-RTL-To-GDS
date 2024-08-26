@@ -1,0 +1,42 @@
+****************************************
+Report : port
+        -design_rule
+        -input_delay
+        -drive
+        -output_delay
+Module : RISCV_Top
+Mode   : default
+Corner : default
+Scenario: default
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:56:41 2025
+****************************************
+                      Pin Cap                    Wire Cap
+                   Min          Max           Min          Max
+Port      Dir    rise/fall    rise/fall     rise/fall    rise/fall    Attributes
+--------------------------------------------------------------------------------
+clk       in     0.00/0.00    0.00/0.00     0.00/0.00    0.00/0.00
+
+Port           MaxTrans MaxCap   MinCap
+-------------------------------------------
+clk            0.23     32.00    --
+
+                      Input Delay
+                    Min             Max       Related Related
+ Input Port     Rise    Fall    Rise    Fall   Clock   Pin
+-----------------------------------------------------------------
+clk             --      --      --      --      --      --
+
+            Resistance (min/max)
+Input Port  Rise             Fall
+--------------------------------------------------------------------------------
+clk         --               --
+
+                      Driving Cell
+Input Port     Type     Cell                Mult      Clock     Attrs
+--------------------------------------------------------------------------------
+clk            min_rise NBUFFX4_HVT         
+clk            min_fall NBUFFX4_HVT         
+clk            max_rise NBUFFX4_HVT         
+clk            max_fall NBUFFX4_HVT         
+1

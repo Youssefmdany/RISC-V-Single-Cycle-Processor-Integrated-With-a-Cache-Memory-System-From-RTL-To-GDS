@@ -1,0 +1,24 @@
+****************************************
+Report : report_utilization
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:54:10 2025
+****************************************
+Utilization Ratio:			0.5791
+Utilization options:
+ - Area calculation based on:		site_row of block Placement
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				9776.4114
+Total Capacity Area:			9776.4114
+Total Area of cells:			5661.0576
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.5791
+
+0.5791

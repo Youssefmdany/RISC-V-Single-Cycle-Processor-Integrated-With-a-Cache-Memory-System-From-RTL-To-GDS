@@ -1,0 +1,3 @@
+RISCV_Top.data_mem_sys.cache_contrl.idle0
+RISCV_Top.data_mem_sys.cache_contrl.reading2
+RISCV_Top.data_mem_sys.cache_contrl.writing1

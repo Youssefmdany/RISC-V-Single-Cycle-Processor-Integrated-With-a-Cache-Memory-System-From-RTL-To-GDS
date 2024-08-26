@@ -1,0 +1,41 @@
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner default: no PVT mismatches. (PVT-032)
+****************************************
+Report : cell
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:52:53 2025
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model
+    U - Unbound (missing)
+    s - user size_only
+    S - implicit size_only
+    d - user dont_touch
+    D - derived dont_touch
+    o - synthetic operator
+
+
+Cell                      Reference       Library          Attributes
+--------------------------------------------------------------------------------
+data_mem_sys              Data_Memory_System               h
+risc_v                    RISCV                            h
+--------------------------------------------------------------------------------
+Total 2 cells
+
+1

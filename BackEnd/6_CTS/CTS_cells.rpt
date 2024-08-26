@@ -1,0 +1,35 @@
+****************************************
+Report : cell
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:56:40 2025
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model
+    U - Unbound (missing)
+    s - user size_only
+    S - implicit size_only
+    d - user dont_touch
+    D - derived dont_touch
+    o - synthetic operator
+
+
+Cell                      Reference       Library          Attributes
+--------------------------------------------------------------------------------
+APS_CLK_ISO_0             DELLN3X2_HVT    saed32hvt_ff_c   s, S
+cts_inv_309839            INVX16_HVT      saed32hvt_ff_c   
+cts_inv_310840            IBUFFX8_HVT     saed32hvt_ff_c   
+cts_inv_315845            INVX16_HVT      saed32hvt_ff_c   
+cts_trgdly_897            NBUFFX2_HVT     saed32hvt_ff_c   
+data_mem_sys              Data_Memory_System               h
+risc_v                    RISCV                            h
+--------------------------------------------------------------------------------
+Total 7 cells
+
+1

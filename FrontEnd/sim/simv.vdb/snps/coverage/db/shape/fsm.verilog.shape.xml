@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_fsm.dtd">
+  <fsm count="0"  noconst="0"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="O-2018.09-1"  />
+      <fsmdef file="151"  name="Cache_Contrl"  lib=""  parameterized="1"  >
+        <fsmshape >
+          <fsmfsm name="state"  id="0"  width="2"  line="55"  chksum="2829487770"  >
+            <state name="idle"  value="parameterized"  id="0"  flag="L"  line="55"  />
+            <state name="reading"  value="parameterized"  id="1"  flag="L"  line="109"  />
+            <state name="writing"  value="parameterized"  id="2"  flag="L"  line="115"  />
+
+            <transition fromid="0"  toid="1"  flag="L"  line="109"  />
+            <transition fromid="0"  toid="2"  flag="L"  line="115"  />
+            
+            <transition fromid="1"  toid="0"  flag="L"  line="55"  />
+            <transition fromid="1"  toid="2"  flag="L"  line="151"  />
+            
+            <transition fromid="2"  toid="0"  flag="L"  line="55"  />
+            <transition fromid="2"  toid="1"  flag="L"  line="182"  />
+            
+          </fsmfsm>
+        </fsmshape>
+        <fsminst name="RISCV_Top.data_mem_sys.cache_contrl"  />
+      </fsmdef>
+          <metric_sig chksum="65346B85311F2B356F944DB142EE5F5060E09C14"  />
+    </fsm>

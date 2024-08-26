@@ -1,0 +1,699 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:52:54 2025
+****************************************
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[19][0] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)    0.05      1.67 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)   0.03      1.70 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)    0.04      1.74 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)    0.04      1.77 f
+  data_mem_sys/cache_contrl/U211/Y (NAND2X0_HVT)   0.05      1.82 r
+  data_mem_sys/cache_contrl/U418/Y (NBUFFX2_HVT)   0.04      1.86 r
+  data_mem_sys/cache_contrl/U292/Y (INVX0_HVT)     0.03      1.89 f
+  data_mem_sys/cache_contrl/U93/Y (AO22X1_HVT)     0.04      1.93 f
+  data_mem_sys/cache_contrl/tags_arr_reg[19][0]/D (DFFNARX1_HVT)
+                                                   0.00      1.93 f
+  data arrival time                                          1.93
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[19][0]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.93
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.98
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[19][2] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)    0.05      1.67 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)   0.03      1.70 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)    0.04      1.74 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)    0.04      1.77 f
+  data_mem_sys/cache_contrl/U211/Y (NAND2X0_HVT)   0.05      1.82 r
+  data_mem_sys/cache_contrl/U418/Y (NBUFFX2_HVT)   0.04      1.86 r
+  data_mem_sys/cache_contrl/U292/Y (INVX0_HVT)     0.03      1.89 f
+  data_mem_sys/cache_contrl/U95/Y (AO22X1_HVT)     0.04      1.93 f
+  data_mem_sys/cache_contrl/tags_arr_reg[19][2]/D (DFFNARX1_HVT)
+                                                   0.00      1.93 f
+  data arrival time                                          1.93
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[19][2]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.93
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.98
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[19][1] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)    0.05      1.67 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)   0.03      1.70 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)    0.04      1.74 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)    0.04      1.77 f
+  data_mem_sys/cache_contrl/U211/Y (NAND2X0_HVT)   0.05      1.82 r
+  data_mem_sys/cache_contrl/U418/Y (NBUFFX2_HVT)   0.04      1.86 r
+  data_mem_sys/cache_contrl/U292/Y (INVX0_HVT)     0.03      1.89 f
+  data_mem_sys/cache_contrl/U94/Y (AO22X1_HVT)     0.04      1.93 f
+  data_mem_sys/cache_contrl/tags_arr_reg[19][1]/D (DFFNARX1_HVT)
+                                                   0.00      1.93 f
+  data arrival time                                          1.93
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[19][1]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.93
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.98
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[17][0] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)    0.05      1.67 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)   0.03      1.70 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)    0.04      1.74 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)    0.04      1.77 f
+  data_mem_sys/cache_contrl/U206/Y (NAND2X0_HVT)   0.04      1.81 r
+  data_mem_sys/cache_contrl/U415/Y (NBUFFX2_HVT)   0.04      1.85 r
+  data_mem_sys/cache_contrl/U295/Y (INVX0_HVT)     0.03      1.88 f
+  data_mem_sys/cache_contrl/U85/Y (AO22X1_HVT)     0.04      1.93 f
+  data_mem_sys/cache_contrl/tags_arr_reg[17][0]/D (DFFNARX1_HVT)
+                                                   0.00      1.93 f
+  data arrival time                                          1.93
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[17][0]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.93
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.98
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[17][2] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)    0.05      1.67 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)   0.03      1.70 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)    0.04      1.74 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)    0.04      1.77 f
+  data_mem_sys/cache_contrl/U206/Y (NAND2X0_HVT)   0.04      1.81 r
+  data_mem_sys/cache_contrl/U415/Y (NBUFFX2_HVT)   0.04      1.85 r
+  data_mem_sys/cache_contrl/U295/Y (INVX0_HVT)     0.03      1.88 f
+  data_mem_sys/cache_contrl/U87/Y (AO22X1_HVT)     0.04      1.92 f
+  data_mem_sys/cache_contrl/tags_arr_reg[17][2]/D (DFFNARX1_HVT)
+                                                   0.00      1.92 f
+  data arrival time                                          1.92
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[17][2]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.92
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.99
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[17][1] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)    0.05      1.67 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)   0.03      1.70 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)    0.04      1.74 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)    0.04      1.77 f
+  data_mem_sys/cache_contrl/U206/Y (NAND2X0_HVT)   0.04      1.81 r
+  data_mem_sys/cache_contrl/U415/Y (NBUFFX2_HVT)   0.04      1.85 r
+  data_mem_sys/cache_contrl/U295/Y (INVX0_HVT)     0.03      1.88 f
+  data_mem_sys/cache_contrl/U86/Y (AO22X1_HVT)     0.04      1.92 f
+  data_mem_sys/cache_contrl/tags_arr_reg[17][1]/D (DFFNARX1_HVT)
+                                                   0.00      1.92 f
+  data arrival time                                          1.92
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[17][1]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.92
+  ------------------------------------------------------------------------
+  slack (MET)                                                7.99
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[4][0] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U285/Y (AND3X2_HVT)    0.06      1.69 f
+  data_mem_sys/cache_contrl/U178/Y (AND2X1_HVT)    0.07      1.75 f
+  data_mem_sys/cache_contrl/U173/Y (NAND2X0_HVT)   0.07      1.82 r
+  data_mem_sys/cache_contrl/U300/Y (INVX0_HVT)     0.04      1.86 f
+  data_mem_sys/cache_contrl/U33/Y (AO22X1_HVT)     0.05      1.91 f
+  data_mem_sys/cache_contrl/tags_arr_reg[4][0]/D (DFFNARX1_HVT)
+                                                   0.00      1.91 f
+  data arrival time                                          1.91
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[4][0]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.91
+  ------------------------------------------------------------------------
+  slack (MET)                                                8.00
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[4][2] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U285/Y (AND3X2_HVT)    0.06      1.69 f
+  data_mem_sys/cache_contrl/U178/Y (AND2X1_HVT)    0.07      1.75 f
+  data_mem_sys/cache_contrl/U173/Y (NAND2X0_HVT)   0.07      1.82 r
+  data_mem_sys/cache_contrl/U300/Y (INVX0_HVT)     0.04      1.86 f
+  data_mem_sys/cache_contrl/U35/Y (AO22X1_HVT)     0.05      1.91 f
+  data_mem_sys/cache_contrl/tags_arr_reg[4][2]/D (DFFNARX1_HVT)
+                                                   0.00      1.91 f
+  data arrival time                                          1.91
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[4][2]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.91
+  ------------------------------------------------------------------------
+  slack (MET)                                                8.00
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[3][2] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U285/Y (AND3X2_HVT)    0.06      1.69 f
+  data_mem_sys/cache_contrl/U333/Y (AND2X1_HVT)    0.07      1.75 f
+  data_mem_sys/cache_contrl/U171/Y (NAND2X0_HVT)   0.07      1.82 r
+  data_mem_sys/cache_contrl/U296/Y (INVX0_HVT)     0.04      1.86 f
+  data_mem_sys/cache_contrl/U31/Y (AO22X1_HVT)     0.05      1.91 f
+  data_mem_sys/cache_contrl/tags_arr_reg[3][2]/D (DFFNARX1_HVT)
+                                                   0.00      1.91 f
+  data arrival time                                          1.91
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[3][2]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.91
+  ------------------------------------------------------------------------
+  slack (MET)                                                8.00
+
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[3][0] (falling edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  risc_v/Program_counter/PC_Out_reg[0]/CLK (DFFARX1_HVT)
+                                                   0.00      0.00 r
+  risc_v/Program_counter/PC_Out_reg[0]/Q (DFFARX1_HVT)
+                                                   0.12      0.12 r
+  risc_v/U169/Y (AO22X1_HVT)                       0.10      0.21 r
+  risc_v/alu/sub_16/U2/Y (INVX0_HVT)               0.03      0.24 f
+  risc_v/alu/sub_16/U30/Y (NAND2X0_HVT)            0.04      0.28 r
+  risc_v/alu/sub_16/U2_1/CO (FADDX1_HVT)           0.06      0.34 r
+  risc_v/alu/sub_16/U2_2/CO (FADDX1_HVT)           0.06      0.40 r
+  risc_v/alu/sub_16/U2_3/CO (FADDX1_HVT)           0.06      0.46 r
+  risc_v/alu/sub_16/U2_4/CO (FADDX1_HVT)           0.06      0.52 r
+  risc_v/alu/sub_16/U2_5/CO (FADDX1_HVT)           0.06      0.58 r
+  risc_v/alu/sub_16/U2_6/CO (FADDX1_HVT)           0.06      0.64 r
+  risc_v/alu/sub_16/U2_7/CO (FADDX1_HVT)           0.06      0.70 r
+  risc_v/alu/sub_16/U2_8/CO (FADDX1_HVT)           0.06      0.76 r
+  risc_v/alu/sub_16/U2_9/CO (FADDX1_HVT)           0.07      0.84 r
+  risc_v/alu/sub_16/U2_10/CO (FADDX1_HVT)          0.07      0.90 r
+  risc_v/alu/sub_16/U2_11/S (FADDX1_HVT)           0.08      0.99 f
+  risc_v/alu/U75/Y (AOI222X1_HVT)                  0.06      1.05 r
+  risc_v/alu/U73/Y (NAND2X0_HVT)                   0.13      1.18 f
+  risc_v/U280/Y (AND2X1_HVT)                       0.06      1.24 f
+  data_mem_sys/cache_contrl/U290/Y (INVX0_HVT)     0.03      1.27 r
+  data_mem_sys/cache_contrl/U329/Y (INVX1_HVT)     0.07      1.34 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)   0.08      1.42 r
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)   0.03      1.45 f
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)    0.05      1.50 f
+  data_mem_sys/cache_contrl/U241/Y (NAND2X0_HVT)   0.04      1.54 r
+  data_mem_sys/cache_contrl/U420/Y (INVX0_HVT)     0.02      1.56 f
+  data_mem_sys/cache_contrl/U238/Y (NAND3X0_HVT)   0.03      1.59 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)   0.04      1.62 f
+  data_mem_sys/cache_contrl/U285/Y (AND3X2_HVT)    0.06      1.69 f
+  data_mem_sys/cache_contrl/U333/Y (AND2X1_HVT)    0.07      1.75 f
+  data_mem_sys/cache_contrl/U171/Y (NAND2X0_HVT)   0.07      1.82 r
+  data_mem_sys/cache_contrl/U296/Y (INVX0_HVT)     0.04      1.86 f
+  data_mem_sys/cache_contrl/U29/Y (AO22X1_HVT)     0.05      1.91 f
+  data_mem_sys/cache_contrl/tags_arr_reg[3][0]/D (DFFNARX1_HVT)
+                                                   0.00      1.91 f
+  data arrival time                                          1.91
+
+  clock clk (fall edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  data_mem_sys/cache_contrl/tags_arr_reg[3][0]/CLK (DFFNARX1_HVT)
+                                                   0.00     10.00 f
+  clock uncertainty                               -0.05      9.95
+  library setup time                              -0.04      9.91
+  data required time                                         9.91
+  ------------------------------------------------------------------------
+  data required time                                         9.91
+  data arrival time                                         -1.91
+  ------------------------------------------------------------------------
+  slack (MET)                                                8.00
+
+
+1

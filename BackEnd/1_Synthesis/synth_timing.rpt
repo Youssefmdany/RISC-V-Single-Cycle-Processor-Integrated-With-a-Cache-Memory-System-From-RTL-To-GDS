@@ -1,0 +1,733 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:49:52 2025
+****************************************
+
+Operating Conditions: ff0p95v125c   Library: saed32hvt_ff0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[19][2]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)           0.08       9.17 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)          0.08       9.25 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)           0.09       9.33 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)           0.15       9.48 f
+  data_mem_sys/cache_contrl/U211/Y (NAND2X0_HVT)          0.07       9.56 r
+  data_mem_sys/cache_contrl/U418/Y (NBUFFX2_HVT)          0.08       9.64 r
+  data_mem_sys/cache_contrl/U292/Y (INVX0_HVT)            0.07       9.72 f
+  data_mem_sys/cache_contrl/U95/Y (AO22X1_HVT)            0.16       9.87 f
+  data_mem_sys/cache_contrl/tags_arr_reg[19][2]/D (DFFNARX1_HVT)
+                                                          0.01       9.88 f
+  data arrival time                                                  9.88
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[19][2]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[19][1]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)           0.08       9.17 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)          0.08       9.25 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)           0.09       9.33 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)           0.15       9.48 f
+  data_mem_sys/cache_contrl/U211/Y (NAND2X0_HVT)          0.07       9.56 r
+  data_mem_sys/cache_contrl/U418/Y (NBUFFX2_HVT)          0.08       9.64 r
+  data_mem_sys/cache_contrl/U292/Y (INVX0_HVT)            0.07       9.72 f
+  data_mem_sys/cache_contrl/U94/Y (AO22X1_HVT)            0.16       9.87 f
+  data_mem_sys/cache_contrl/tags_arr_reg[19][1]/D (DFFNARX1_HVT)
+                                                          0.01       9.88 f
+  data arrival time                                                  9.88
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[19][1]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[19][0]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)           0.08       9.17 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)          0.08       9.25 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)           0.09       9.33 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)           0.15       9.48 f
+  data_mem_sys/cache_contrl/U211/Y (NAND2X0_HVT)          0.07       9.56 r
+  data_mem_sys/cache_contrl/U418/Y (NBUFFX2_HVT)          0.08       9.64 r
+  data_mem_sys/cache_contrl/U292/Y (INVX0_HVT)            0.07       9.72 f
+  data_mem_sys/cache_contrl/U93/Y (AO22X1_HVT)            0.16       9.87 f
+  data_mem_sys/cache_contrl/tags_arr_reg[19][0]/D (DFFNARX1_HVT)
+                                                          0.01       9.88 f
+  data arrival time                                                  9.88
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[19][0]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[17][2]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)           0.08       9.17 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)          0.08       9.25 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)           0.09       9.33 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)           0.15       9.48 f
+  data_mem_sys/cache_contrl/U206/Y (NAND2X0_HVT)          0.07       9.56 r
+  data_mem_sys/cache_contrl/U415/Y (NBUFFX2_HVT)          0.08       9.64 r
+  data_mem_sys/cache_contrl/U295/Y (INVX0_HVT)            0.07       9.72 f
+  data_mem_sys/cache_contrl/U87/Y (AO22X1_HVT)            0.16       9.87 f
+  data_mem_sys/cache_contrl/tags_arr_reg[17][2]/D (DFFNARX1_HVT)
+                                                          0.01       9.88 f
+  data arrival time                                                  9.88
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[17][2]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[17][1]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)           0.08       9.17 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)          0.08       9.25 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)           0.09       9.33 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)           0.15       9.48 f
+  data_mem_sys/cache_contrl/U206/Y (NAND2X0_HVT)          0.07       9.56 r
+  data_mem_sys/cache_contrl/U415/Y (NBUFFX2_HVT)          0.08       9.64 r
+  data_mem_sys/cache_contrl/U295/Y (INVX0_HVT)            0.07       9.72 f
+  data_mem_sys/cache_contrl/U86/Y (AO22X1_HVT)            0.16       9.87 f
+  data_mem_sys/cache_contrl/tags_arr_reg[17][1]/D (DFFNARX1_HVT)
+                                                          0.01       9.88 f
+  data arrival time                                                  9.88
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[17][1]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[17][0]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U230/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U104/Y (AND2X1_HVT)           0.08       9.17 f
+  data_mem_sys/cache_contrl/U284/Y (NBUFFX2_HVT)          0.08       9.25 f
+  data_mem_sys/cache_contrl/U227/Y (AND2X1_HVT)           0.09       9.33 f
+  data_mem_sys/cache_contrl/U68/Y (NBUFFX2_HVT)           0.15       9.48 f
+  data_mem_sys/cache_contrl/U206/Y (NAND2X0_HVT)          0.07       9.56 r
+  data_mem_sys/cache_contrl/U415/Y (NBUFFX2_HVT)          0.08       9.64 r
+  data_mem_sys/cache_contrl/U295/Y (INVX0_HVT)            0.07       9.72 f
+  data_mem_sys/cache_contrl/U85/Y (AO22X1_HVT)            0.16       9.87 f
+  data_mem_sys/cache_contrl/tags_arr_reg[17][0]/D (DFFNARX1_HVT)
+                                                          0.01       9.88 f
+  data arrival time                                                  9.88
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[17][0]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[31][0]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U439/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U232/Y (AND3X2_HVT)           0.10       9.18 f
+  data_mem_sys/cache_contrl/U159/Y (AND2X1_HVT)           0.09       9.28 f
+  data_mem_sys/cache_contrl/U146/Y (NAND2X0_HVT)          0.27       9.55 r
+  data_mem_sys/cache_contrl/U306/Y (INVX0_HVT)            0.15       9.70 f
+  data_mem_sys/cache_contrl/U141/Y (AO22X1_HVT)           0.16       9.86 f
+  data_mem_sys/cache_contrl/tags_arr_reg[31][0]/D (DFFNARX1_HVT)
+                                                          0.01       9.87 f
+  data arrival time                                                  9.87
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[31][0]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[31][1]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U439/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U232/Y (AND3X2_HVT)           0.10       9.18 f
+  data_mem_sys/cache_contrl/U159/Y (AND2X1_HVT)           0.09       9.28 f
+  data_mem_sys/cache_contrl/U146/Y (NAND2X0_HVT)          0.27       9.55 r
+  data_mem_sys/cache_contrl/U306/Y (INVX0_HVT)            0.15       9.70 f
+  data_mem_sys/cache_contrl/U142/Y (AO22X1_HVT)           0.16       9.86 f
+  data_mem_sys/cache_contrl/tags_arr_reg[31][1]/D (DFFNARX1_HVT)
+                                                          0.01       9.87 f
+  data arrival time                                                  9.87
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[31][1]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[31][2]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U439/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U232/Y (AND3X2_HVT)           0.10       9.18 f
+  data_mem_sys/cache_contrl/U159/Y (AND2X1_HVT)           0.09       9.28 f
+  data_mem_sys/cache_contrl/U146/Y (NAND2X0_HVT)          0.27       9.55 r
+  data_mem_sys/cache_contrl/U306/Y (INVX0_HVT)            0.15       9.70 f
+  data_mem_sys/cache_contrl/U143/Y (AO22X1_HVT)           0.16       9.86 f
+  data_mem_sys/cache_contrl/tags_arr_reg[31][2]/D (DFFNARX1_HVT)
+                                                          0.01       9.87 f
+  data arrival time                                                  9.87
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[31][2]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: risc_v/Program_counter/PC_Out_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_mem_sys/cache_contrl/tags_arr_reg[30][0]
+            (falling edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_Top          8000                  saed32hvt_ff0p95v125c
+  RISCV              8000                  saed32hvt_ff0p95v125c
+  ALU_DW_rash_0      8000                  saed32hvt_ff0p95v125c
+  ALU                8000                  saed32hvt_ff0p95v125c
+  Cache_Contrl       8000                  saed32hvt_ff0p95v125c
+  Data_Memory_System 8000                  saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  risc_v/Program_counter/PC_Out_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00       0.00 r
+  risc_v/Program_counter/PC_Out_reg[28]/Q (DFFARX1_HVT)
+                                                          0.11       0.11 r
+  risc_v/Program_counter/PC_Out[28] (PC)                  0.00       0.11 r
+  risc_v/U376/Y (AO22X2_HVT)                              0.72       0.83 r
+  risc_v/alu/A[28] (ALU)                                  0.00       0.83 r
+  risc_v/alu/r66/A[28] (ALU_DW_rash_0)                    0.00       0.83 r
+  risc_v/alu/r66/U69/Y (AO221X1_HVT)                      4.11       4.94 r
+  risc_v/alu/r66/U104/Y (AO22X1_HVT)                      0.45       5.39 r
+  risc_v/alu/r66/U76/Y (AO221X1_HVT)                      0.10       5.49 r
+  risc_v/alu/r66/B[8] (ALU_DW_rash_0)                     0.00       5.49 r
+  risc_v/alu/U77/Y (AOI222X1_HVT)                         0.08       5.57 f
+  risc_v/alu/U76/Y (NAND2X0_HVT)                          0.07       5.64 r
+  risc_v/alu/ALUResult[8] (ALU)                           0.00       5.64 r
+  risc_v/U272/Y (AND2X1_HVT)                              0.09       5.73 r
+  risc_v/Data_addr[8] (RISCV)                             0.00       5.73 r
+  data_mem_sys/byte_address[8] (Data_Memory_System)       0.00       5.73 r
+  data_mem_sys/cache_contrl/addr[8] (Cache_Contrl)        0.00       5.73 r
+  data_mem_sys/cache_contrl/U144/Y (INVX1_HVT)            1.82       7.55 f
+  data_mem_sys/cache_contrl/U357/Y (AO22X1_HVT)           0.87       8.42 f
+  data_mem_sys/cache_contrl/U228/Y (XNOR2X1_HVT)          0.08       8.50 f
+  data_mem_sys/cache_contrl/U244/Y (NAND3X0_HVT)          0.07       8.57 r
+  data_mem_sys/cache_contrl/U242/Y (AO21X1_HVT)           0.06       8.63 r
+  data_mem_sys/cache_contrl/U120/Y (INVX0_HVT)            0.25       8.87 f
+  data_mem_sys/cache_contrl/U231/Y (NAND2X0_HVT)          0.14       9.01 r
+  data_mem_sys/cache_contrl/U439/Y (NAND2X0_HVT)          0.07       9.08 f
+  data_mem_sys/cache_contrl/U232/Y (AND3X2_HVT)           0.10       9.18 f
+  data_mem_sys/cache_contrl/U162/Y (AND2X1_HVT)           0.09       9.28 f
+  data_mem_sys/cache_contrl/U161/Y (NAND2X0_HVT)          0.27       9.55 r
+  data_mem_sys/cache_contrl/U309/Y (INVX0_HVT)            0.15       9.70 f
+  data_mem_sys/cache_contrl/U137/Y (AO22X1_HVT)           0.16       9.86 f
+  data_mem_sys/cache_contrl/tags_arr_reg[30][0]/D (DFFNARX1_HVT)
+                                                          0.01       9.87 f
+  data arrival time                                                  9.87
+
+  clock clk (fall edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.05       9.95
+  data_mem_sys/cache_contrl/tags_arr_reg[30][0]/CLK (DFFNARX1_HVT)
+                                                          0.00       9.95 f
+  library setup time                                     -0.04       9.91
+  data required time                                                 9.91
+  --------------------------------------------------------------------------
+  data required time                                                 9.91
+  data arrival time                                                 -9.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1

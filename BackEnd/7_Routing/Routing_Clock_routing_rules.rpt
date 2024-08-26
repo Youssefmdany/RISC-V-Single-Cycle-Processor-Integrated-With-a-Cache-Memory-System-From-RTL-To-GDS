@@ -1,0 +1,8 @@
+****************************************
+ Report : clock routing rules
+ Design : RISCV_Top
+ Date   : Thu Feb 20 02:58:36 2025
+****************************************
+   Design Base; Net Type: all;      Rule: cts_w2_s2_vlg; Min Layer: M4; Max Layer: M5
+   Design Base; Net Type: sink;     Rule: default rule; Min Layer: M1; Max Layer: M2
+

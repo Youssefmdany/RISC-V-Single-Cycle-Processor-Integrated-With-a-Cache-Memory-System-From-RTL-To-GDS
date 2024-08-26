@@ -1,0 +1,102 @@
+****************************************
+ Report : clock settings
+ Design : Routing
+ Date   : Thu Feb 20 02:58:36 2025
+****************************************
+
+
+======================================
+Configurations 
+======================================
+
+##Global
+  Corner = default
+    Max transition: 0.500
+    Max capacitance: 600.000
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+##clk
+  Corner = default
+    Max transition: 0.500
+    Max capacitance: 600.000
+    Target skew: 0.500
+    Target latency: 0.100
+
+
+======================================
+Routing Rules 
+======================================
+
+##Global
+Routing rule for sink nets: Default Min Layer:M1 Max Layer:M2
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: cts_w2_s2_vlg  Min Layer:M4 Max Layer:M5
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+##clk
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+
+======================================
+Buffers and Inverters 
+======================================
+
+##Buffers
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+saed32hvt_ff_c/DELLN1X2_HVT           5.083               1.024         16.000
+saed32hvt_ff_c/DELLN2X2_HVT           6.608               1.024         16.000
+saed32hvt_ff_c/DELLN3X2_HVT           9.657               1.024         16.000
+saed32hvt_ff_c/NBUFFX16_HVT           6.099               1.024         82.000
+saed32hvt_ff_c/NBUFFX2_HVT            2.033               1.024         16.000
+saed32hvt_ff_c/NBUFFX32_HVT          10.674               1.024        168.000
+saed32hvt_ff_c/NBUFFX4_HVT            2.541               1.024         32.000
+saed32hvt_ff_c/NBUFFX8_HVT            3.812               1.024         64.000
+saed32hvt_ff_c/AOBUFX1_HVT            7.116               1.024          8.000
+saed32hvt_ff_c/AOBUFX2_HVT            7.624               1.024         16.000
+saed32hvt_ff_c/AOBUFX4_HVT            8.641               1.024         32.000
+
+##Inverters
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+saed32hvt_ff_c/IBUFFX16_HVT           6.608               1.024         82.000
+saed32hvt_ff_c/IBUFFX2_HVT            2.541               1.024         16.000
+saed32hvt_ff_c/IBUFFX32_HVT          11.691               1.024        168.000
+saed32hvt_ff_c/IBUFFX4_HVT            3.050               1.024         32.000
+saed32hvt_ff_c/IBUFFX8_HVT            4.320               1.024         64.000
+saed32hvt_ff_c/INVX0_HVT              1.271               1.024          8.000
+saed32hvt_ff_c/INVX16_HVT             5.083               1.024         82.000
+saed32hvt_ff_c/INVX1_HVT              1.271               1.024          8.000
+saed32hvt_ff_c/INVX2_HVT              1.525               1.024         16.000
+saed32hvt_ff_c/INVX32_HVT             9.149               1.024        168.000
+saed32hvt_ff_c/INVX4_HVT              2.033               1.024         32.000
+saed32hvt_ff_c/INVX8_HVT              3.050               1.024         64.000
+saed32hvt_ff_c/AOINVX1_HVT            7.116               1.024          8.000
+saed32hvt_ff_c/AOINVX2_HVT            8.133               1.024         16.000
+saed32hvt_ff_c/AOINVX4_HVT            9.149               1.024         32.000
+
+
+======================================
+Spacing Rules 
+======================================
+
+##By design
+No by design spacing rule is specified
+
+##By clock
+No by clock spacing rule is specified
+
+##By libcell
+No by libcell spacing rule is specified
+
+##By clock and libcell
+No by clock and libcell spacing rule is specified
+1

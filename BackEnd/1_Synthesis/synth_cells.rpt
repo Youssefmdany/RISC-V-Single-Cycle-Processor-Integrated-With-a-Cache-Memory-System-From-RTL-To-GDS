@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : cell
+Design : RISCV_Top
+Version: O-2018.06-SP1
+Date   : Thu Feb 20 02:49:52 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+data_mem_sys              Data_Memory_System              1869.229142
+                                                                    b, h, n
+risc_v                    RISCV                           4026.911696
+                                                                    b, h, n
+--------------------------------------------------------------------------------
+Total 2 cells                                             5896.140838
+1

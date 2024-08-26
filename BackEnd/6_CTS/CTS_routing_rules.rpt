@@ -1,0 +1,44 @@
+Name     WidthMltplr SpacingMltplr TaperDist DriverTaperDist TaperOverPinLayers TaperUnderPinLayers DriverTaperOverPinLayers DriverTaperUnderPinLayers ParallelWireLayers
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cts_w2_s2_vlg
+         1           1             0.40      0.40
+
+         --------------------------------------------------------------------------------------
+         Layer     Width     ShieldWth ShieldSpc Snap2Trck RdlTaperDist RdlTaperWidth Mask
+         --------------------------------------------------------------------------------------
+
+         M1        0.05
+
+         M2        0.06
+
+         M3        0.16
+
+                   ---------------------------------------
+                   Index     Spacing   Weight    Threshold
+                   ---------------------------------------
+                   0         0.16      hard      0.00
+
+         M4        0.32
+
+                   ---------------------------------------
+                   Index     Spacing   Weight    Threshold
+                   ---------------------------------------
+                   0         0.32      hard      0.00
+
+         M5        0.32
+
+                   ---------------------------------------
+                   Index     Spacing   Weight    Threshold
+                   ---------------------------------------
+                   0         0.32      hard      0.00
+
+         M6        0.06
+
+         M7        0.06
+
+         M8        0.06
+
+         M9        0.16
+
+         MRDL      2.00
+1
